@@ -8,12 +8,10 @@ COPY files /files
 # Define a volume where people can mount custom files to override anything in the wso2 product
 VOLUME /extra
 
-ADD ./wso2am-1.9.1.zip /opt/
-
 RUN apt-get update && \
     apt-get install -y zip xmlstarlet && \
     apt-get clean && \
-    #wget -P /opt --user-agent="testuser" --referer="http://connect.wso2.com/wso2/getform/reg/new_product_download" http://product-dist.wso2.com/products/api-manager/1.9.1/wso2am-1.9.1.zip && \
+    wget -P /opt --user-agent="testuser" --referer="http://connect.wso2.com/wso2/getform/reg/new_product_download" http://product-dist.wso2.com/products/api-manager/1.9.1/wso2am-1.9.1.zip && \
     unzip /opt/wso2am-1.9.1.zip -d /opt && \
     mv /opt/wso2am-1.9.1 /opt/wso2 && \
     rm /opt/wso2am-1.9.1.zip && \
