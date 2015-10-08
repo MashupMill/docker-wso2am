@@ -8,10 +8,12 @@ COPY files /files
 # Define a volume where people can mount custom files to override anything in the wso2 product
 VOLUME /extra
 
+ADD ./wso2am-1.9.1.zip /opt/
+
 RUN apt-get update && \
     apt-get install -y zip xmlstarlet && \
     apt-get clean && \
-    wget -P /opt --user-agent="testuser" --referer="http://connect.wso2.com/wso2/getform/reg/new_product_download" http://product-dist.wso2.com/products/api-manager/1.9.1/wso2am-1.9.1.zip && \
+    #wget -P /opt --user-agent="testuser" --referer="http://connect.wso2.com/wso2/getform/reg/new_product_download" http://product-dist.wso2.com/products/api-manager/1.9.1/wso2am-1.9.1.zip && \
     unzip /opt/wso2am-1.9.1.zip -d /opt && \
     mv /opt/wso2am-1.9.1 /opt/wso2 && \
     rm /opt/wso2am-1.9.1.zip && \
@@ -22,7 +24,7 @@ RUN apt-get update && \
     chmod a+x /opt/wso2/bin/*.sh && \
 
     # Download the property parser (to convert a properties file into property arguments)
-    wget -O /opt/wso2/bin/property-parser-1.1.jar https://github.com/MashupMill/property-parser/releases/download/1.1/property-parser-1.1.jar && \
+    wget -O /opt/wso2/bin/property-parser-1.2.jar https://github.com/MashupMill/property-parser/releases/download/1.2/property-parser-1.2.jar && \
 
     # Insert the <parameter name="HostnameVerifier">AllowAll</parameter> element ... \
     # this is to allow the HTTPS requests passed through from the api-server to internal servers to allow any hostname \
