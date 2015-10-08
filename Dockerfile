@@ -37,4 +37,4 @@ RUN apt-get update && \
 
 WORKDIR /opt/wso2/
 EXPOSE 9443 8280 8243
-CMD ["/opt/wso2/bin/wso2server.sh"]
+CMD ["/opt/wso2/bin/entrypoint.sh"]
