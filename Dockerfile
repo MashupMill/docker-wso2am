@@ -24,13 +24,6 @@ RUN apt-get update && \
     # Download the property parser (to convert a properties file into property arguments)
     wget -O /opt/wso2/bin/property-parser-1.3.jar https://github.com/MashupMill/property-parser/releases/download/1.3/property-parser-1.3.jar && \
 
-    # Insert the <parameter name="HostnameVerifier">AllowAll</parameter> element ... \
-    # this is to allow the HTTPS requests passed through from the api-server to internal servers to allow any hostname \
-    xmlstarlet edit --inplace -s "/axisconfig/transportSender[@name='https']" -t elem -n parameter -v AllowAll \
-           -i "/axisconfig/transportSender[@name='https']/parameter[not(@name)]" -t attr -n name -v HostnameVerifier \
-           /opt/wso2/repository/conf/axis2/axis2.xml && \
-
-
     # Tell API Manager to return json when returning auth failure messages.
     # Unfortunately it doesn't appear to support content negotiation :(
     sed -i 's/application\/xml/application\/json/' /opt/wso2/repository/deployment/server/synapse-configs/default/sequences/_auth_failure_handler_.xml
