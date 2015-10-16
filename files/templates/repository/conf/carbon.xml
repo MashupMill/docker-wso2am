@@ -526,16 +526,16 @@
 	In master nodes you need to set both AutoCommit and AutoCheckout to true
 	and in  worker nodes set only AutoCheckout to true.
     -->
-    <!--<DeploymentSynchronizer>
-        <Enabled>true</Enabled>
-        <AutoCommit>false</AutoCommit>
-        <AutoCheckout>true</AutoCheckout>
-        <RepositoryType>svn</RepositoryType>
-        <SvnUrl>http://svnrepo.example.com/repos/</SvnUrl>
-        <SvnUser>username</SvnUser>
-        <SvnPassword>password</SvnPassword>
-        <SvnUrlAppendTenantId>true</SvnUrlAppendTenantId>
-    </DeploymentSynchronizer>-->
+    <DeploymentSynchronizer>
+        <Enabled>${Server.DeploymentSynchronizer.Enabled}</Enabled>
+        <AutoCommit>${Server.DeploymentSynchronizer.AutoCommit}</AutoCommit>
+        <AutoCheckout>${Server.DeploymentSynchronizer.AutoCheckout}</AutoCheckout>
+        <RepositoryType>${Server.DeploymentSynchronizer.RepositoryType}</RepositoryType>
+        <SvnUrl>${Server.DeploymentSynchronizer.SvnUrl}</SvnUrl>
+        <SvnUser>${Server.DeploymentSynchronizer.SvnUser}</SvnUser>
+        <SvnPassword>${Server.DeploymentSynchronizer.SvnPassword}</SvnPassword>
+        <SvnUrlAppendTenantId>${Server.DeploymentSynchronizer.SvnUrlAppendTenantId}</SvnUrlAppendTenantId>
+    </DeploymentSynchronizer>
 
     <!-- Deployment Synchronizer Configuration. Uncomment the following section when running with "registry based" dep sync.
         In master nodes you need to set both AutoCommit and AutoCheckout to true
