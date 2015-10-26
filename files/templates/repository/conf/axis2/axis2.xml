@@ -307,8 +307,8 @@
             <KeyStore>
                 <Location>${KeyStore.Primary.Location}</Location>
                 <Type>${KeyStore.Primary.Type}</Type>
-                <Password>${KeyStore.Primary.Password}{KeyStore.Primary.Password}</Password>
-                <KeyPassword>${KeyStore.Primary.KeyPassword}{KeyStore.Primary.KeyPassword}</KeyPassword>
+                <Password>${KeyStore.Primary.Password}</Password>
+                <KeyPassword>${KeyStore.Primary.KeyPassword}</KeyPassword>
             </KeyStore>
         </parameter>
         <parameter name="truststore" locked="false">
