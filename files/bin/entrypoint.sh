@@ -63,7 +63,7 @@ else
     echo 'wso2registry.mount.prefix=<!--
 wso2registry.mount.suffix=-->' >> $PROPERTIES_FILE
 fi
-cat $PROPERTIES_FILE
+
 # Run the $PROPERTIES_FILE file through the property-parser to produce java property arguments
 #OPTS=`java -jar ${CARBON_HOME}/bin/property-parser.jar $PROPERTIES_FILE -d`
 
