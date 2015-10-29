@@ -305,17 +305,17 @@
         <parameter name="httpGetProcessor" locked="false">org.wso2.carbon.transport.nhttp.api.PassThroughNHttpGetProcessor</parameter>
         <parameter name="keystore" locked="false">
             <KeyStore>
-                <Location>${KeyStore.Primary.Location}</Location>
-                <Type>${KeyStore.Primary.Type}</Type>
-                <Password>${KeyStore.Primary.Password}</Password>
-                <KeyPassword>${KeyStore.Primary.KeyPassword}</KeyPassword>
+                <Location>${KeyStore_Primary_Location}</Location>
+                <Type>${KeyStore_Primary_Type}</Type>
+                <Password>${KeyStore_Primary_Password}</Password>
+                <KeyPassword>${KeyStore_Primary_KeyPassword}</KeyPassword>
             </KeyStore>
         </parameter>
         <parameter name="truststore" locked="false">
             <TrustStore>
-                <Location>${TrustStore.Location}</Location>
-                <Type>${TrustStore.Type}</Type>
-                <Password>${TrustStore.Password}</Password>
+                <Location>${TrustStore_Location}</Location>
+                <Type>${TrustStore_Type}</Type>
+                <Password>${TrustStore_Password}</Password>
             </TrustStore>
         </parameter>
         <!--<parameter name="SSLVerifyClient">require</parameter>
@@ -332,17 +332,17 @@
         <!--parameter name="httpGetProcessor" locked="false">org.wso2.carbon.transport.nhttp.api.NHttpGetProcessor</parameter>
         <parameter name="keystore" locked="false">
             <KeyStore>
-                <Location>${KeyStore.Primary.Location}</Location>
-                <Type>${KeyStore.Primary.Type}</Type>
-                <Password>${KeyStore.Primary.Password}</Password>
-                <KeyPassword>${KeyStore.Primary.KeyPassword}</KeyPassword>
+                <Location>${KeyStore_Primary_Location}</Location>
+                <Type>${KeyStore_Primary_Type}</Type>
+                <Password>${KeyStore_Primary_Password}</Password>
+                <KeyPassword>${KeyStore_Primary_KeyPassword}</KeyPassword>
             </KeyStore>
         </parameter>
         <parameter name="truststore" locked="false">
             <TrustStore>
-                <Location>${TrustStore.Location}</Location>
-                <Type>${TrustStore.Type}</Type>
-                <Password>${TrustStore.Password}</Password>
+                <Location>${TrustStore_Location}</Location>
+                <Type>${TrustStore_Type}</Type>
+                <Password>${TrustStore_Password}</Password>
             </TrustStore>
         </parameter-->
         <!--<parameter name="SSLVerifyClient">require</parameter>
@@ -365,17 +365,17 @@
         <!--parameter name="WSDLEPRPrefix" locked="false">https://apachehost:port/somepath</parameter-->
         <!--<parameter name="keystore" locked="false">
             <KeyStore>
-                <Location>${KeyStore.Primary.Location}</Location>
-                <Type>${KeyStore.Primary.Type}</Type>
-                <Password>${KeyStore.Primary.Password}</Password>
-                <KeyPassword>${KeyStore.Primary.KeyPassword}</KeyPassword>
+                <Location>${KeyStore_Primary_Location}</Location>
+                <Type>${KeyStore_Primary_Type}</Type>
+                <Password>${KeyStore_Primary_Password}</Password>
+                <KeyPassword>${KeyStore_Primary_KeyPassword}</KeyPassword>
             </KeyStore>
         </parameter>
         <parameter name="truststore" locked="false">
             <TrustStore>
-                <Location>${TrustStore.Location}</Location>
-                <Type>${TrustStore.Type}</Type>
-                <Password>${TrustStore.Password}</Password>
+                <Location>${TrustStore_Location}</Location>
+                <Type>${TrustStore_Type}</Type>
+                <Password>${TrustStore_Password}</Password>
             </TrustStore>
         </parameter>-->
         <!--<parameter name="SSLVerifyClient">require</parameter>
@@ -492,17 +492,17 @@
         <parameter name="non-blocking" locked="false">true</parameter>
         <parameter name="keystore" locked="false">
             <KeyStore>
-                <Location>${KeyStore.Primary.Location}</Location>
-                <Type>${KeyStore.Primary.Type}</Type>
-                <Password>${KeyStore.Primary.Password}</Password>
-                <KeyPassword>${KeyStore.Primary.KeyPassword}</KeyPassword>
+                <Location>${KeyStore_Primary_Location}</Location>
+                <Type>${KeyStore_Primary_Type}</Type>
+                <Password>${KeyStore_Primary_Password}</Password>
+                <KeyPassword>${KeyStore_Primary_KeyPassword}</KeyPassword>
             </KeyStore>
         </parameter>
         <parameter name="truststore" locked="false">
             <TrustStore>
-                <Location>${TrustStore.Location}</Location>
-                <Type>${TrustStore.Type}</Type>
-                <Password>${TrustStore.Password}</Password>
+                <Location>${TrustStore_Location}</Location>
+                <Type>${TrustStore_Type}</Type>
+                <Password>${TrustStore_Password}</Password>
             </TrustStore>
         </parameter-->
         <!--<parameter name="HostnameVerifier">DefaultAndLocalhost</parameter>-->
@@ -526,17 +526,17 @@
         <parameter name="non-blocking" locked="false">true</parameter>
         <parameter name="keystore" locked="false">
             <KeyStore>
-                <Location>${KeyStore.Primary.Location}</Location>
-                <Type>${KeyStore.Primary.Type}</Type>
-                <Password>${KeyStore.Primary.Password}</Password>
-                <KeyPassword>${KeyStore.Primary.KeyPassword}</KeyPassword>
+                <Location>${KeyStore_Primary_Location}</Location>
+                <Type>${KeyStore_Primary_Type}</Type>
+                <Password>${KeyStore_Primary_Password}</Password>
+                <KeyPassword>${KeyStore_Primary_KeyPassword}</KeyPassword>
             </KeyStore>
         </parameter>
         <parameter name="truststore" locked="false">
             <TrustStore>
-                <Location>${TrustStore.Location}</Location>
-                <Type>${TrustStore.Type}</Type>
-                <Password>${TrustStore.Password}</Password>
+                <Location>${TrustStore_Location}</Location>
+                <Type>${TrustStore_Type}</Type>
+                <Password>${TrustStore_Password}</Password>
             </TrustStore>
         </parameter>
         <!--<parameter name="HostnameVerifier">DefaultAndLocalhost</parameter>-->
@@ -547,17 +547,17 @@
         <parameter name="non-blocking" locked="false">true</parameter>
         <parameter name="keystore" locked="false">
             <KeyStore>
-                <Location>${KeyStore.Primary.Location}</Location>
-                <Type>${KeyStore.Primary.Type}</Type>
-                <Password>${KeyStore.Primary.Password}</Password>
-                <KeyPassword>${KeyStore.Primary.KeyPassword}</KeyPassword>
+                <Location>${KeyStore_Primary_Location}</Location>
+                <Type>${KeyStore_Primary_Type}</Type>
+                <Password>${KeyStore_Primary_Password}</Password>
+                <KeyPassword>${KeyStore_Primary_KeyPassword}</KeyPassword>
             </KeyStore>
         </parameter>
         <parameter name="truststore" locked="false">
             <TrustStore>
-                <Location>${TrustStore.Location}</Location>
-                <Type>${TrustStore.Type}</Type>
-                <Password>${TrustStore.Password}</Password>
+                <Location>${TrustStore_Location}</Location>
+                <Type>${TrustStore_Type}</Type>
+                <Password>${TrustStore_Password}</Password>
             </TrustStore>
         </parameter>-->
         <!--<parameter name="HostnameVerifier">DefaultAndLocalhost</parameter>-->

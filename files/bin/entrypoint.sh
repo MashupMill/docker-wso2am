@@ -4,9 +4,9 @@ CARBON_HOME=${CARBON_HOME:-/opt/wso2}
 
 getEnvironmentVarsAsProperties () {
     # Take any environment variables prefixed with APP_, remove the APP_ prefix, then change underscores to periods
-    for name in `printenv | grep -E -o '^APP_[A-Za-z0-9_]+'`; do
+    for name in `printenv | grep -E -o '^[A-Za-z0-9_]+'`; do
         if [ "$name" != "" ]; then
-            prop=`echo $name | awk '{gsub(/^APP_/, "");gsub("__", "."); print $0}'`
+            prop=`echo $name | awk '{gsub("__", "."); print $0}'`
             echo "$prop=${!name}"
         fi
     done
@@ -63,7 +63,7 @@ else
     echo 'wso2registry.mount.prefix=<!--
 wso2registry.mount.suffix=-->' >> $PROPERTIES_FILE
 fi
-
+cat $PROPERTIES_FILE
 # Run the $PROPERTIES_FILE file through the property-parser to produce java property arguments
 #OPTS=`java -jar ${CARBON_HOME}/bin/property-parser.jar $PROPERTIES_FILE -d`
 
