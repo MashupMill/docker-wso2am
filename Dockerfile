@@ -34,7 +34,7 @@ RUN echo 'deb http://http.us.debian.org/debian squeeze main' > /etc/apt/sources.
     sed -i 's/application\/xml/application\/json/' /opt/wso2/repository/deployment/server/synapse-configs/default/sequences/_auth_failure_handler_.xml
 
 # Define a volume where people can mount custom files to override anything in the wso2 product
-VOLUME ["/extra"]
+VOLUME ["/extra", "/startup.d"]
 WORKDIR /opt/wso2/
 EXPOSE 9443 8280 8243
 CMD ["/opt/wso2/bin/entrypoint.sh"]
